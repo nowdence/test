@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+    <title>百度新闻</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="news" id="wrapper">
+        <div id="index_view">
+            <header>
+                <div class="toolbar">
+                    <div class="toolbar-l">
+                        <div class="toolbar-btn btn-baidu"></div>
+                        <div class="toolbar-btn btn-userhome"></div>
+                    </div>
+                    <div class="toolbar-r">
+                        <div class="toolbar-btn btn-search"></div>
+                        <div class="toolbar-btn btn-subscribe"></div>
+                    </div>
+                </div>
+            </header>
+            <div id="index_view_content">
+                <div id="index_view_navigator">
+                    <div class="divider"></div>
+                    <div class="content">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td colspan="1">
+                                        <div>
+                                            <b></b>
+                                            <span>推荐</span>
+                                        </div>
+                                    </td>
+                                    <td colspan="1">
+                                        <div>
+                                            <b></b>
+                                            <span>百家</span>
+                                        </div>
+                                    </td>
+                                    <td colspan="2">
+                                        <div>
+                                            <b></b>
+                                            <span class="cur">广州市</span>
+                                        </div>
+                                    </td>
+                                    <td colspan="1">
+                                        <div>
+                                            <b></b>
+                                            <span>娱乐</span>
+                                        </div>
+                                    </td>
+                                    <td colspan="1">
+                                        <div>
+                                            <b></b>
+                                            <span>社会</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div id="index_view_sections">
+                    <div class="list-item">
+                        <p class="title">亚冠半决赛：大阪钢巴0-0广州恒大</p>
+                        <p class="main">决赛的两回合较量将分别在11月7日及21日进行，恒大先客后主。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="./js/jquery-2.1.4.min.js"></script>
+<script>
+    $.ajax({
+        url:"mysql.php",
+        type:"POST",
+        data:{"index": "3"},      //select
+        dataType:"json",
+        success:function(data){
+            $.each(data,function(index,value){
+                var item = $("<div>").addClass("list-item").appendTo($("#index_view_sections"));
+                $("<p>").addClass("title").text($(value).attr("newsTitle")).appendTo(item);
+                $("<p>").addClass("main").text($(value).attr("newsContent")).appendTo(item);
+            })
+        },
+        error:function(error){
+            console.log(error);
+        }
+    });
+</script>
+</body>
+</html>

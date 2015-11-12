@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+    <!--<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">-->
+    <title>新闻管理系统</title>
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/backstage.css">
+</head>
+<body>
+	<div class="container">
+        <ul class="nav nav-pills">
+            <li class="active" id="a1"><a href="#">新闻列表</a></li>
+            <li id="a2"><a href="#">添加新闻</a></li>
+        </ul>
+		<div class="content tab">
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th>新闻序号</th>
+                    <th>新闻标题</th>
+                    <th>新闻内容</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+                <tbody id="tbody">
+                <tr>
+                    <th class="newsId">1</th>
+                    <th>亚冠半决赛：大阪钢巴0-0广州恒大</th>
+                    <th>决赛的两回合较量将分别在11月7日及21日进行，恒大先客后主。</th>
+                    <th>
+                    	<a href="#" class="delete">删除</a>
+         	        	<a href="#" class="update">修改</a>
+                    </th>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+	</div>
+
+
+    <div class="content form con_out" id="addForm">
+        <form action="mysql.php" target="">
+            <input type="hidden" name="index" id="index" value="0"/>    <!--insert-->
+            <div class="form-group">
+                <label for="newsId">新闻序号</label>
+                <input class="form-control" type="text" name="newsId" id="newsId" placeholder="请填写新闻序号"/>
+            </div>
+            <div class="form-group">
+                <label for="newsTitle">新闻标题</label>
+                <input class="form-control" type="text" name="newsTitle" id="newsTitle" placeholder="请填写新闻标题"/>
+            </div>
+            <div class="form-group">
+                <label for="newsContent">新闻内容</label>
+                <textarea class="form-control" name="newsContent" id="newsContent" placeholder="请填写新闻内容"
+                          style="height: 200px;"></textarea>
+            </div>
+            <div class="form-group">
+                <input class="btn btn-primary" type="submit" id="submit" value="提交"/>
+                <input class="btn btn-default" type="reset" value="重置"/>
+                <p id="addresult"></p>
+            </div>
+        </form>
+    </div>
+
+    <div class="content form con_out" id="updateForm">
+        <form action="mysql.php">
+            <input type="hidden" name="index" id="_index" value="2"/>    <!--update-->
+            <div class="form-group">
+                <label for="newsId">新闻序号</label>
+                <input class="form-control" type="text" name="newsId" id="_newsId"/>
+            </div>
+            <div class="form-group">
+                <label for="newsTitle">新闻标题</label>
+                <input class="form-control" type="text" name="newsTitle" id="_newsTitle" placeholder="请填写新闻标题"/>
+            </div>
+            <div class="form-group">
+                <label for="newsContent">新闻内容</label>
+                <textarea class="form-control" name="newsContent" id="_newsContent" placeholder="请填写新闻内容"
+                          style="height: 200px;"></textarea>
+            </div>
+            <div class="form-group">
+                <input class="btn btn-primary" type="submit" id="update" value="修改"/>
+                <p id="updresult"></p>
+            </div>
+        </form>
+    </div>
+
+	<script type="text/javascript" src="./js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="./js/backstage.js"></script>
+
+<script>
+$("#addForm").submit(function(e) {
+    e.preventDefault();
+})
+
+$("#updateForm").submit(function(e) {
+    e.preventDefault();
+})
+
+var index = 3;
+$.post('mysql.php',{index:index},function(data) {
+    alert("ok");
+})
+
+    // var index = 3;  //select
+    // $.ajax({
+    //     url:"mysql.php",
+    //     type:"POST",
+    //     data:{index: index},
+    //     dataType:"json",
+    //     success:function(data){
+    //         $.each(data,function(index,value){
+    //             var tr = $("<tr>").appendTo(tbody);
+    //             $("<td>").addClass("newsId").text($(value).attr("newsId")).appendTo(tr);
+    //             $("<td>").text($(value).attr("newsTitle")).appendTo(tr);
+    //             $("<td>").text($(value).attr("newsContent")).appendTo(tr);
+    //             var td = $("<td>").appendTo(tr);
+    //             $("<a>").addClass("delete").text("删除").appendTo(td);
+    //             $("<a>").addClass("update").text("修改").appendTo(td);
+    //         });
+    //         console.log(data);
+    //     },
+    //     error:function(){
+    //         console.log("请求失败");
+    //     }
+    // });
+</script>
+</body>
+</html>

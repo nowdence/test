@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+/**
+ * 
+ * @authors nGates (nowdence@aliyun.com)
+ * @date    2015-09-16 22:10:45
+ * @version $Id$
+ */
+
+.container {
+    width: 800px;
+    margin-top: 100px;
+}
+
+.btn-warning {
+    height: 235px;
+    /*width:100%;*/
+}

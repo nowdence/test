@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>task1.studentGrade</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <style>
+    .container {
+        padding-top: 100px;
+        padding-left: 100px;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-group">
+            <input class="form-control" type="text" id="score" name="score" placeholder="请在此处输入你的分数"></input>
+            <div id="grade"></div>
+            <button type="button" name="button" onclick="studentGrade()" class="btn btn-success">评等级</button>
+        </div>
+    </div>
+    <script>
+    function studentGrade() {
+        var s = document.getElementById("score").value;
+        var g = document.getElementById("grade");
+        if (s <= 100 && s >= 90) {
+            g.innerHTML = "你的分数是" + s + "分，祝贺你，1等生!";
+        } else if (s <= 89 && s >= 80) {
+            g.innerHTML = "你的分数是" + s + "分，祝贺你，2等生!";
+        } else if (s <= 79 && s >= 70) {
+            g.innerHTML = "你的分数是" + s + "分，祝贺你，3等生!";
+        } else if (s <= 69 && s >= 60) {
+            g.innerHTML = "你的分数是" + s + "分，祝贺你，4等生!";
+        } else if (s <= 59 && s >= 50) {
+            g.innerHTML = "你的分数是" + s + "分，祝贺你，5等生!";
+        } else if (s <= 49 && s >= 40) {
+            g.innerHTML = "你的分数是" + s + "分，加油，6等生!";
+        } else if (s <= 39 && s >= 30) {
+            g.innerHTML = "你的分数是" + s + "分，加油，7等生!";
+        } else if (s <= 29 && s >= 20) {
+            g.innerHTML = "你的分数是" + s + "分，加油，8等生!";
+        } else if (s <= 19 && s >= 10) {
+            g.innerHTML = "你的分数是" + s + "分，加油，9等生!";
+        } else if (s <= 9 && s >= 1) {
+            g.innerHTML = "你的分数是" + s + "分，加油，10等生!";
+        } else {
+            g.innerHTML = "你还没有输入分数哦，亲！~~";
+        }
+    }
+    </script>
+</body>
+
+</html>

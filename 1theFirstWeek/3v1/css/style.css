@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration:none;
+    color: #757575;
+}
+a:hover{
+    color: #4d4d4d;
+}
+img{
+    width: 270px;
+    height: 129px;
+    display: block;
+    margin: 40px auto;
+}
+.ul{
+    text-align: center;
+}
+ul{
+    display: inline-block;
+}
+ul li{
+    float: left;
+    padding-right: 12px;
+    list-style-type:none;
+}
+.ul .visited a:visited{
+    color: #292929;
+}
+form{
+    text-align: center;
+    margin-left: -20px;
+    position: relative;
+}
+.input{
+    width: 540px;
+    height: 38px;
+    font-size: 24px;
+}
+.button{
+    position: absolute;
+    width: 140px;
+    height: 42px;
+    margin-left: 10px;
+}

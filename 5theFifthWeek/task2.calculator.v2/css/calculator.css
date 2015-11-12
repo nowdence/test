@@ -1,0 +1,26 @@
+input {
+    width: 93%;
+}
+
+.success .btn-primary,
+.success .btn-success,
+.success .btn-danger,
+.success .btn-warning {
+    width: 100%;
+}
+
+.active {
+    padding-bottom: 5px;
+}
+
+td {
+    width: 25%;
+}
+
+.container {
+    width: 210px;
+    height: 300px;
+    border: 1px solid #CCCCCC;
+    box-shadow: 1px 2px 26px;
+    margin-top: 10px;
+}

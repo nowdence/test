@@ -1,0 +1,269 @@
+@charset "UTF-8";
+
+/**
+ * 
+ * @authors nGates (nowdence@aliyun.com)
+ * @date    2015-09-08 22:39:05
+ * @version $Id$
+ */
+
+
+/*公共部分*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body {
+    font: 12px arial;
+    /*width: 800px;*/
+}
+
+img {
+    width: 270px;
+    height: 129px;
+    display: block;
+    margin: 40px auto;
+}
+
+
+/*导航样式*/
+
+.header {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 16px 0 5px 0;
+    padding: 0 96px 0 0;
+    height: 24px;
+    /*width:1000px;*/
+}
+
+.header .mnav {
+    float: left;
+    color: #333;
+    font-weight: bold;
+    line-height: 24px;
+    margin-left: 20px;
+    font-size: 13px;
+    text-decoration: underline;
+}
+
+.header a:hover {
+    color: #00c;
+}
+
+.header .dnav {
+    display: inline-block;
+    float: left;
+    color: #333;
+    font-size: 13px;
+    line-height: 24px;
+    margin-left: 20px;
+    text-decoration: underline;
+}
+
+.header .setnav {
+    display: inline-block;
+    float: left;
+    color: #333;
+    line-height: 24px;
+    font-size: 13px;
+    margin-left: 20px;
+    overflow: hidden;
+    text-decoration: underline;
+}
+
+.header .setmore {
+    position: absolute;
+    right: 10px;
+    width: 60px;
+    height: 23px;
+    float: left;
+    color: white;
+    background: #38f;
+    line-height: 24px;
+    font-size: 13px;
+    text-align: center;
+    overflow: hidden;
+    border-bottom: 1px solid #38f;
+    margin-left: 19px;
+    margin-right: 2px;
+    text-decoration: none;
+}
+
+.header span a:hover {
+    color: red;
+}
+
+
+/*百度一下样式*/
+
+.middle {
+    margin: 0 auto;
+    height: 191px;
+    text-align: center;
+    width:640px;
+}
+
+.middle .middle_tu {
+    display: block;
+    text-align: center;
+    margin: 0;
+    height: 132px;
+}
+
+.middle .middle_form {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.middle .middle_form .ipt {
+    background-color: rgb(255, 255, 255);
+    border-bottom-color: rgb(204, 204, 204);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-left-color: rgb(184, 184, 184);
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-right-color: rgba(0, 0, 0, 0);
+    border-right-style: solid;
+    border-right-width: 0px;
+    border-top-color: rgb(184, 184, 184);
+    border-top-style: solid;
+    border-top-width: 1px;
+    height: 34px;
+    list-style-position: outside;
+    list-style-type: none;
+    margin-right: 0px;
+        overflow-x: hidden;
+    overflow-y: hidden;
+    position: relative;
+    text-align: left;
+    vertical-align: top;
+    width: 531px;
+    padding-left: 8px;
+    overflow: hidden;
+    /*background: url(../img/icons1.png) no-repeat;*/
+    /*background-position: -82px -88px;*/
+    /*position: relative;*/
+    _opacity: 0px;
+    _padding-top:10px;
+    _height:23px;
+
+
+
+}
+
+.middle .middle_form .btn {
+    background-color: rgb(51, 133, 255);
+    border-bottom-color: rgb(45, 120, 244);
+    border-bottom-width: 1px;
+    border-image-width: 1;
+    border-left-color: rgb(255, 255, 255);
+    border-left-style: none;
+    border-right-color: rgb(255, 255, 255);
+    border-right-style: none;
+    border-right-width: 0px;
+    border-top-color: rgb(255, 255, 255);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-top-style: none;
+    border-top-width: 0px;
+    border-bottom-style: none;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: inline-block;
+    font-family: Arial;
+    font-size: 15px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    height: 36px;
+    letter-spacing: 1px;
+    line-height: normal;
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    outline-color: rgb(255, 255, 255);
+    text-align: center;
+    text-indent: 0px;
+    width: 100px;
+}
+
+.middle .middle_form .btn:hover {
+    background: #317ef3;
+    border-bottom: 1px solid #2868c8;
+    box-shadow: 1px 1px 1px #ccc
+    _background: #317ef3;
+    _border-bottom: 1px solid #2868c8;
+    _box-shadow: 1px 1px 1px #ccc
+}
+.middle .middle_form .btn:_hover {
+    background: #317ef3;
+    border-bottom: 1px solid #2868c8;
+    box-shadow: 1px 1px 1px #ccc
+    _background: #317ef3;
+    _border-bottom: 1px solid #2868c8;
+    _box-shadow: 1px 1px 1px #ccc
+}
+
+.middle .middle_form form .ipt:hover {
+    border-color: #999 transparent #b3b3b3 #999;
+}
+
+
+/*留白样式*/
+
+.apart {
+    height: 227px;
+}
+
+
+/*底部样式*/
+
+.footer {
+    text-align: center;
+    height: 100px;
+}
+
+.footer_text1 {
+    width: 720px;
+    height: 14px;
+    margin: 16px auto 5px auto;
+}
+
+.footer_text1 a {
+    margin: 0px 10px;
+    color: #00c;
+}
+
+.footer_text2 {
+    width: 720px;
+    height: 20px;
+    margin: 0 auto;
+}
+
+.footer,
+.footer_text2 a {
+    color: #666;
+}
+
+.footer .icon {
+    width: 14px;
+    height: 17px;
+    display: inline-block;
+    overflow: hidden;
+    background: url(../img/icons.png) no-repeat;
+    background-position: -600px -96px;
+    position: relative;
+    top: 3px
+}

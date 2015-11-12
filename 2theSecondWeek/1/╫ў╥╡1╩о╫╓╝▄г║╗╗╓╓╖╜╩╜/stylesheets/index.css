@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+/**
+ * 
+ * @authors nowdence (nowdence@aliyun.com)
+ * @date    2015-09-04 11:07:14
+ * @version 换个法子
+ */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/*五个盒子公用的阴影*/
+
+.first,
+.second,
+.third,
+.four,
+.five {
+    width: 100px;
+    height: 100px;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, .6);
+}
+
+.middle {
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.second,
+.third,
+.four {
+    float: left;
+}
+
+.first,
+.five {
+    margin: 50px auto 0px auto;
+    clear: both;
+}
+
+.middle .third img {
+    height: 100px;
+    position: relative;
+    top: 50%;
+    margin-top: -50px;
+}
+
+
+/*给盒子上色*/
+
+.first {
+    background-color: red;
+}
+
+.second {
+    background-color: blue;
+}
+
+.third {
+    background-color: #ccc;
+}
+
+.four {
+    background-color: green;
+}
+
+.five {
+    background-color: yellow;
+}

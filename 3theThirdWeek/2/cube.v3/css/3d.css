@@ -1,0 +1,505 @@
+@charset "UTF-8";
+
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2015-09-07 08:20:24
+ * @version $Id$
+ */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: red;
+}
+
+body {
+    background-color: rgba(0, 252, 223, .6);
+}
+
+.view {
+    width: 180px;
+    height: 180px;
+    margin: 80px auto 0 auto;
+    text-align: center;
+}
+
+@-webkit-keyframes animations {
+    0% {
+        -webkit-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    }
+    10% {
+        -webkit-transform: rotateX(90deg) rotateY(90deg) rotateZ(90deg);
+    }
+    20% {
+        -webkit-transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+    }
+    30% {
+        -webkit-transform: rotateX(270deg) rotateY(270deg) rotateZ(270deg);
+    }
+    40% {
+        -webkit-transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+    }
+    50% {
+        -webkit-transform: rotateX(450deg) rotateY(450deg) rotateZ(450deg);
+    }
+    60% {
+        -webkit-transform: rotateX(540deg) rotateY(540deg) rotateZ(540deg);
+    }
+    80% {
+        -webkit-transform: rotateX(630deg) rotateY(630deg) rotateZ(630deg);
+    }
+    100% {
+        -webkit-transform: rotateX(720deg) rotateY(720deg) rotateZ(720deg);
+    }
+}
+
+.box {
+    -webkit-animation-name: animations;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 6s;
+    /*此行代码用于调试*/
+    /*-webkit-perspective: 180px;*/
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform-origin: 90px 90px 0px;
+}
+
+.box div {
+    position: absolute;
+    height: 180px;
+    width: 180px;
+    border: 1px;
+    solid #000;
+    /*background: rgba(255, 200, 100, .3);*/
+    text-align: center;
+}
+
+.box .one {
+    -webkit-transform: translateZ(90px);
+}
+
+.box .two {
+    -webkit-transform: rotateX(-90deg) translateZ(90px);
+}
+
+.box .three {
+    -webkit-transform: rotateX(90deg) rotateY(-90deg) translateZ(90px) rotateZ(-90deg);
+}
+
+.box .four {
+    -webkit-transform: rotateX(0deg) rotateY(180deg) rotateZ(180deg) translateZ(90px);
+}
+
+.box .five {
+    -webkit-transform: rotateX(90deg) rotateY(360deg) translateZ(90px);
+}
+
+.box .six {
+    -webkit-transform: rotateX(90deg) rotateY(90deg) translateZ(90px) rotateZ(270deg);
+}
+
+.one .oneinner,
+.two .oneinner,
+.three .oneinner,
+.four .oneinner,
+.five .oneinner,
+.six .oneinner {
+    width: 60px;
+    height: 60px;
+    color: #f00;
+    float: left;
+    display: inline-block;
+    position: relative;
+}
+
+
+/*设置魔方外框样式*/
+
+.view .box .one .oneinner {
+    background-color: rgba(255, 255, 100, 0.3);
+    border: 1px;
+    solid #000;
+    border-collapse: collapse;
+}
+
+.view .box .two .oneinner {
+    background-color: rgba(184, 210, 100, 0.3);
+    border: 1px;
+    solid #f00;
+    border-collapse: collapse;
+}
+
+.view .box .three .oneinner {
+    background-color: rgba(20, 30, 100, 0.3);
+    border: 1px;
+    solid #ff0;
+    border-collapse: collapse;
+}
+
+.view .box .four .oneinner {
+    background-color: rgba(30, 100, 27, 0.3);
+    border: 1px;
+    solid #fff;
+    border-collapse: collapse;
+}
+
+.view .box .five .oneinner {
+    background-color: rgba(100, 210, 100, 0.3);
+    border: 1px;
+    solid #00f;
+    border-collapse: collapse;
+}
+
+.view .box .six .oneinner {
+    background-color: rgba(30, 80, 210, 0.3);
+    border: 1px;
+    solid #0F0;
+    border-collapse: collapse;
+}
+
+
+/*设置魔方里面小格格样式*/
+
+@-webkit-keyframes animations1 {
+    0% {
+        -webkit-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    }
+    10% {
+        -webkit-transform: rotateX(90deg) rotateY(90deg) rotateZ(90deg);
+    }
+    20% {
+        -webkit-transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+    }
+    30% {
+        -webkit-transform: rotateX(270deg) rotateY(270deg) rotateZ(270deg);
+    }
+    40% {
+        -webkit-transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+    }
+    50% {
+        -webkit-transform: rotateX(450deg) rotateY(450deg) rotateZ(450deg);
+    }
+    60% {
+        -webkit-transform: rotateX(540deg) rotateY(540deg) rotateZ(540deg);
+    }
+    80% {
+        -webkit-transform: rotateX(630deg) rotateY(630deg) rotateZ(630deg);
+    }
+    100% {
+        -webkit-transform: rotateX(720deg) rotateY(720deg) rotateZ(720deg);
+    }
+}
+
+
+/*.oneinner {*/
+
+
+/*-webkit-animation-name: animations1;*/
+
+
+/*-webkit-animation-timing-function: ease-in-out;*/
+
+
+/*-webkit-animation-iteration-count: infinite;*/
+
+
+/*-webkit-animation-duration: 6s;*/
+
+
+/*此行代码用于调试*/
+
+
+/*-webkit-perspective: 54px;*/
+
+
+/*-webkit-transform-style: preserve-3d;*/
+
+
+/*-webkit-transform-origin: 27px 27px 0px;*/
+
+
+/*}*/
+
+.view .box .oneinner div {
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    border: 1px;
+    solid #000;
+    border-collapse: collapse;
+    /*background: rgba(255, 200, 100, .6);*/
+    text-align: center;
+    font-size: 24px;
+}
+
+
+/*设置魔方内部小格3D样式*/
+
+.oneinner .oneinner-one {
+    -webkit-transform: translateZ(27px);
+    position: relative;
+}
+
+.oneinner .oneinner-two {
+    -webkit-transform: rotateX(-90deg) translateZ(27px);
+    position: relative;
+}
+
+.oneinner .oneinner-three {
+    -webkit-transform: rotateX(90deg) rotateY(-90deg) translateZ(27px) rotateZ(-90deg);
+    position: relative;
+}
+
+.oneinner .oneinner-four {
+    -webkit-transform: rotateX(0deg) rotateY(180deg) rotateZ(180deg) translateZ(27px);
+    position: relative;
+}
+
+.oneinner .oneinner-five {
+    -webkit-transform: rotateX(90deg) rotateY(360deg) translateZ(27px);
+    position: relative;
+}
+
+.oneinner .oneinner-six {
+    -webkit-transform: rotateX(90deg) rotateY(90deg) translateZ(27px) rotateZ(270deg);
+    position: relative;
+}
+
+
+/*魔方六面着色，此为第一面*/
+
+#color11 {
+    background-color: rgba(255, 0, 0, .6);
+}
+
+#color12 {
+    background-color: rgba(0, 255, 0, .6);
+}
+
+#color13 {
+    background-color: rgba(0, 0, 255, .6);
+}
+
+#color21 {
+    background-color: rgba(0, 0, 255, .6);
+}
+
+#color22 {
+    background-color: rgba(255, 0, 0, .6);
+}
+
+#color23 {
+    background-color: rgba(0, 255, 0, .6);
+}
+
+#color31 {
+    background-color: rgba(0, 255, 0, .6);
+}
+
+#color32 {
+    background-color: rgba(0, 0, 255, .6);
+}
+
+#color33 {
+    background-color: rgba(255, 0, 0, .6);
+}
+
+
+/*魔方六面着色，此为第二面*/
+
+#second_color11 {
+    background-color: rgba(255, 0, 0, .6);
+}
+
+#second_color12 {
+    background-color: rgba(0, 255, 0, .6);
+}
+
+#second_color13 {
+    background-color: rgba(0, 0, 255, .6);
+}
+
+#second_color21 {
+    background-color: rgba(0, 0, 255, .6);
+}
+
+#second_color22 {
+    background-color: rgba(255, 0, 0, .6);
+}
+
+#second_color23 {
+    background-color: rgba(0, 255, 0, .6);
+}
+
+#second_color31 {
+    background-color: rgba(0, 255, 0, .6);
+}
+
+#second_color32 {
+    background-color: rgba(0, 0, 255, .6);
+}
+
+#second_color33 {
+    background-color: rgba(255, 0, 0, .6);
+}
+
+
+/*魔方六面着色，此为第三面*/
+
+#third_color11 {
+    background-color: rgba(255, 0, 0, .6);
+}
+
+#third_color12 {
+    background-color: rgba(0, 255, 0, .6);
+}
+
+#third_color13 {
+    background-color: rgba(0, 0, 255, .6);
+}
+
+#third_color21 {
+    background-color: rgba(0, 0, 255, .6);
+}
+
+#third_color22 {
+    background-color: rgba(255, 0, 0, .6);
+}
+
+#third_color23 {
+    background-color: rgba(0, 255, 0, .6);
+}
+
+#third_color31 {
+    background-color: rgba(0, 0, 255, .6);
+}
+
+#third_color32 {
+    background-color: rgba(255, 0, 0, .6);
+}
+
+#third_color33 {
+    background-color: rgba(0, 255, 0, .6);
+}
+
+
+/*魔方六面着色，此为第四面*/
+
+#forth_color11 {
+    background-color: rgba(255, 0, 0, .6);
+}
+
+#forth_color12 {
+    background-color: rgba(0, 255, 0, .6);
+}
+
+#forth_color13 {
+    background-color: rgba(0, 0, 255, .6);
+}
+
+#forth_color21 {
+    background-color: rgba(0, 0, 255, .6);
+}
+
+#forth_color22 {
+    background-color: rgba(255, 0, 0, .6);
+}
+
+#forth_color23 {
+    background-color: rgba(0, 255, 0, .6);
+}
+
+#forth_color31 {
+    background-color: rgba(0, 255, 0, .6);
+}
+
+#forth_color32 {
+    background-color: rgba(0, 0, 255, .6);
+}
+
+#forth_color33 {
+    background-color: rgba(255, 0, 0, .6);
+}
+
+
+/*魔方六面着色，此为第五面*/
+
+#fifth_color11 {
+    background-color: rgba(255, 0, 0, .6);
+}
+
+#fifth_color12 {
+    background-color: rgba(0, 255, 0, .6);
+}
+
+#fifth_color13 {
+    background-color: rgba(0, 0, 255, .6);
+}
+
+#fifth_color21 {
+    background-color: rgba(0, 0, 255, .6);
+}
+
+#fifth_color22 {
+    background-color: rgba(255, 0, 0, .6);
+}
+
+#fifth_color23 {
+    background-color: rgba(0, 255, 0, .6);
+}
+
+#fifth_color31 {
+    background-color: rgba(0, 255, 0, .6);
+}
+
+#fifth_color32 {
+    background-color: rgba(0, 0, 255, .6);
+}
+
+#fifth_color33 {
+    background-color: rgba(255, 0, 0, .6);
+}
+
+
+/*魔方六面着色，此为第六面*/
+
+#sixth_color11 {
+    background-color: rgba(255, 0, 0, .6);
+}
+
+#sixth_color12 {
+    background-color: rgba(0, 255, 0, .6);
+}
+
+#sixth_color13 {
+    background-color: rgba(0, 0, 255, .6);
+}
+
+#sixth_color21 {
+    background-color: rgba(0, 0, 255, .6);
+}
+
+#sixth_color22 {
+    background-color: rgba(255, 0, 0, .6);
+}
+
+#sixth_color23 {
+    background-color: rgba(0, 255, 0, .6);
+}
+
+#sixth_color31 {
+    background-color: rgba(0, 255, 0, .6);
+}
+
+#sixth_color32 {
+    background-color: rgba(0, 0, 255, .6);
+}
+
+#sixth_color33 {
+    background-color: rgba(255, 0, 0, .6);
+}

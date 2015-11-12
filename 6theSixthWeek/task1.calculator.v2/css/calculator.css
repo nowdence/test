@@ -1,0 +1,67 @@
+.btn-primary,
+.btn-default,
+.btn-success,
+.btn-warning,
+.btn-danger {
+    width: 18%;
+    height: 50px;
+    font-size: 16px;
+}
+
+.btn-default {
+    width: 100%;
+}
+
+.row {
+    margin-top: 17px;
+}
+
+body .container {
+    width: 500px;
+    height: 650px;
+    text-align: center;
+    padding-bottom: 10px;
+    background: #FDFDFD;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(153, 153, 153, 0.8), 0px 0px 10px rgba(0, 0, 0, 0.5) inset;
+    -webkit-box-shadow: 0px 0px 10px rgba(153, 153, 153, 0.8), 0px 0px 10px rgba(0, 0, 0, 0.5) inset;
+    background: #F9F9F9;
+    overflow: hidden;
+    margin-top: 50px;
+}
+
+.container input {
+    width: 95%;
+    height: 52px;
+    margin: 10px 7px 0px;
+    border-radius: 5px;
+    border: 1px solid #64655F;
+    box-shadow: 0px 5px 2px rgba(157, 157, 145, 0.8) inset;
+    -webkit-box-shadow: 0px 5px 2px rgba(157, 157, 145, 0.8) inset;
+    outline: none;
+    background: #FCFDEB;
+    text-align: right;
+    font-family: "微软雅黑";
+    font-size: 36px;
+    padding: 0px 10px;
+}
+
+.row .btn {
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    text-shadow: 10px 10px 10px;
+    color: #922;
+    font: 48px bold "微软雅黑";
+}
+
+footer p {
+    text-align: center;
+    margin-top: 50px;
+}
+
+div p {
+    text-align: center;
+}

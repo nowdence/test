@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+/**
+ * 
+ * @authors nGates (nowdence@aliyun.com)
+ * @date    2015-09-08 22:39:05
+ * @version $Id$
+ */
+
+.box {
+    width: 50px;
+    height: 50px;
+    background: rgb(167,255,109);
+    -moz-border-radius: 15px;
+    /*Firefox*/
+    -webkit-border-radius: 15px;
+    /*Safari and Chrome*/
+    border-radius: 15px;
+    /*Opera 10.5+,
+	future browsers,
+	and now also Internet Explorer 6+ using IE-CSS3*/
+    -moz-box-shadow: 10px 10px 20px #000;
+    /*Firefox*/
+    -webkit-box-shadow: 10px 10px 20px #000;
+    /*Safari and Chrome*/
+    box-shadow: 10px 10px 20px #000;
+    /*Opera 10.5+,
+	future browsers,
+	and now also Internet Explorer 6+ using IE-CSS3*/
+	behavior:url(js/ie-css3.htc);
+    /*_position:absolute;*/
+    _z-index:2;
+    _box-shadow: 10px 10px 20px #000;
+
+}

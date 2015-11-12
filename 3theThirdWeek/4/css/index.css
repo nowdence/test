@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+/**
+ * 
+ * @authors nGates (nowdence@aliyun.com)
+ * @date    2015-09-08 22:39:05
+ * @version $Id$
+ */
+
+
+/*双飞翼布局*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*头部背景控制*/
+
+.header {
+    background: #333;
+    border-bottom: 2px solid #F2F4F4;
+}
+
+
+/*中部背景控制*/
+
+.article {
+    background: #eee;
+    border-bottom: 2px solid #F2F4F4;
+}
+
+
+/*尾部背景控制*/
+
+.footer {
+    background: #333;
+    border-bottom: 2px solid #F2F4F4;
+}
+
+
+/*主体部分最小宽度控制，不知道写得对不对，怎么让页面最小宽度和最小高度，我目前只能用这样的笨办法，不知道有没有好的办法*/
+
+.header_con,
+.article_con,
+.footer_con {
+    text-align: center;
+    /*color: red;*/
+    font-size: 16px;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.header_con {
+    background: #B7932D;
+    height: 150px;
+    line-height: 75px;
+}
+
+.article_con {
+    background: #B7932D;
+    height: 400px;
+    /*临时过度代码，中间代码可达到正常显示*/
+    /*padding-left:150px;
+    padding-right:100px;*/
+    overflow: hidden;
+    line-height: 75px;
+}
+
+.footer_con {
+    background: #B7932D;
+    height: 100px;
+}
+
+.article_con .left {
+    background: #08f;
+    float: left;
+    width: 150px;
+    height: 100px;
+    margin-left: -100%;
+    _margin-left: -97%;
+    /*搞不懂这里，IE为什么要设为97%才能正常，还有3%呢？*/
+    /*    position: relative;
+    left:-150px;*/
+    /*opacity: 0.3;*/
+    /*margin-right: 5px;*/
+    margin-bottom: 9999px;
+    padding-bottom: 9999px;
+}
+
+.article_con .middle {
+    background: #f22;
+    float: left;
+    height: 100px;
+    width: 100%;
+    margin-bottom: 9999px;
+    padding-bottom: 9999px;
+    opacity: 0.3;
+    _opacity: 0.3;
+}
+
+.article_con .right {
+    background: #08f;
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin-left: -100px;
+    /*临时过度代码，右元素可靠右正常显示*/
+    /*    position: relative;
+    right:-100px;*/
+    margin-bottom: 9999px;
+    padding-bottom: 9999px;
+}
+
+
+/*实现垂直居中，两种方法都可以，但不知道哪个好*/
+
+.footer .footer_con p {
+    /* position: relative;
+    top: 70px;*/
+    line-height: 50px;
+}
+
+span {
+    font-size: 24px;
+    color: #fff;
+}
+
+
+/*解决过度代码，加个小元素解决左右正常显示的代码*/
+
+.inner {
+    margin-left: 150px;
+    margin-right: 100px;
+    _margin-left: 150px;
+    _margin-right: 100px;
+}

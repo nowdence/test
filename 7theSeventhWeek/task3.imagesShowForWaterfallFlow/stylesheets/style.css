@@ -1,0 +1,339 @@
+@charset "UTF-8";
+
+/**
+ * 
+ * @authors  (nowdence@aliyun.com)
+ * @date    2015-09-20 19:57:04
+ * @version $Id$
+ */
+
+
+/*上导航样式*/
+
+#userInfo {
+    float: right;
+}
+
+
+/*百度首页字样样式*/
+
+.mod-header {
+    margin: 0 50px 0 40px;
+}
+
+.box-top .search #userInfo {
+    position: absolute;
+    font: 12px Arial;
+    color: #aaa;
+    right: 40px;
+    top: 4px;
+    z-index: 2000;
+    text-align: right;
+    white-space: nowrap;
+    line-height: 20px;
+    margin-top: 10px;
+}
+
+.box-top .search #userInfo a {
+    color: #2b66b4;
+    text-decoration: underline;
+    margin-left: 5px;
+}
+
+
+/*搜索框样式*/
+
+#search .s_nav img {
+    float: left;
+    margin: 10px 20px 5px 0;
+}
+
+#search .s_nav .s_tab {
+    float: left;
+    line-height: 31px;
+    padding: 0;
+    float: left;
+    height: 30px;
+    margin-top: 22px;
+}
+
+#search .s_nav .s_tab a {
+    color: #2b66b4;
+    text-decoration: underline;
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+
+/*导航样式*/
+
+.mod-channel-nav {
+    height: 38px;
+    padding-top: 15px;
+}
+
+.mod-channel-nav .box-main {
+    min-width: 980px;
+    height: 39px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    z-index: 1000;
+    zoom: 1;
+}
+
+.mod-channel-nav .box-main .box-wrapper {
+    position: relative;
+    margin: 0 auto;
+    z-index: 1000;
+}
+
+.mod-channel-nav .box-main .box-wrapper .box-normal {
+    background: url(../images/bg-wpr-trans_a4206e4507.png) 0 0 repeat-x;
+    -webkit-border-radius: 2px 2px 3px 3px;
+    -moz-border-radius: 2px 2px 3px 3px;
+    -o-border-radius: 2px 2px 3px 3px;
+    -ms-border-radius: 2px 2px 3px 3px;
+    border-radius: 2px 2px 3px 3px;
+}
+
+.mod-channel-nav .box-main .box-wrapper .x-item {
+    list-style: none;
+    float: left;
+    height: 38px;
+    position: relative;
+}
+
+.mod-channel-nav .box-main .box-wrapper .x-item a {
+    display: inline-block;
+    height: 100%;
+    padding: 0 15px;
+    line-height: 38px;
+    font-size: 15px;
+    color: #fff;
+    font-family: "microsoft yahei", "宋体", "arial";
+}
+
+.mod-channel-nav .box-main .box-wrapper .x-item a:hover {
+    background: url(../images/bg-wpr-h_49c21d0125.png) 0 0 repeat-x;
+}
+
+.mod-channel-nav .box-main .box-wrapper .x-item .ford-tag {
+    position: absolute;
+    width: 55px;
+    height: 20px;
+    right: 3px;
+    top: -10px;
+}
+
+.mod-channel-nav .box-main .box-wrapper .x-item .dress-tag {
+    display: none;
+    height: 47px;
+    width: 53px;
+    position: absolute;
+    top: -19px;
+    left: 22px;
+}
+
+.mod-channel-nav .box-main .box-wrapper .box-more {
+    position: absolute;
+    top: 38px;
+    left: -10000px;
+    z-index: 1000;
+    display: block;
+    width: 204px;
+    background: #3b3e47;
+    border: 1px solid #333;
+    border-top: 0;
+    border-bottom: 2px solid #333;
+    padding: 11px 9px 10px;
+    -webkit-border-radius: 0 0 2px 2px;
+    -moz-border-radius: 0 0 2px 2px;
+    -ms-border-radius: 0 0 2px 2px;
+    -o-border-radius: 0 0 2px 2px;
+    border-radius: 0 0 2px 2px;
+    overflow: hidden;
+    zoom: 1;
+}
+
+.resp-body .resp-channel-nav .box-main .box-wrapper {
+    width: auto;
+}
+
+.mod-channel-nav {
+    height: 38px;
+    padding-top: 15px
+}
+
+.mod-channel-nav .box-main {
+    min-width: 980px;
+    height: 39px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    z-index: 1000;
+    zoom: 1
+}
+
+.mod-channel-nav .box-main .box-wrapper {
+    position: relative;
+    margin: 0 auto;
+    z-index: 1000
+}
+
+.mod-channel-nav .box-main .box-wrapper .box-normal {
+    background: url(../images/nav-bg.png) 0 0 repeat-x;
+    -webkit-border-radius: 2px 2px 3px 3px;
+    -moz-border-radius: 2px 2px 3px 3px;
+    -o-border-radius: 2px 2px 3px 3px;
+    -ms-border-radius: 2px 2px 3px 3px;
+    border-radius: 2px 2px 3px 3px
+}
+
+.mod-channel-nav .box-main .box-wrapper .x-item {
+    list-style: none;
+    float: left;
+    height: 38px;
+    position: relative
+}
+
+.mod-channel-nav .box-main .box-wrapper .x-item a {
+    display: inline-block;
+    height: 100%;
+    padding: 0 15px;
+    line-height: 38px;
+    font-size: 15px;
+    color: #fff;
+    font-family: "microsoft yahei", "宋体", arial
+}
+
+.mod-channel-nav .box-main .box-wrapper .x-item a:hover {
+    background: url(../images/nav-bg-hover.png) 0 0 repeat-x
+}
+
+.mod-channel-nav .box-main .box-wrapper .x-item a.x-focus {
+    background: url(../images/nav-bg-focus.png) 0 0 repeat-x
+}
+
+.mod-channel-nav .box-main .box-wrapper .x-item .ext-tag {
+    position: absolute;
+    width: 23px;
+    height: 9px;
+    right: -8px;
+    top: 6px
+}
+
+.mod-channel-nav .box-main .box-wrapper .x-item .dress-tag {
+    height: 47px;
+    width: 53px;
+    position: absolute;
+    top: -19px;
+    left: 22px
+}
+
+
+/*search样式*/
+
+.search #search .s_ipt_wr input,
+.search #search .s_btn_wr input {
+    padding: 0;
+    border: 0
+}
+
+.search #search .s_ipt_wr {
+    width: 533px;
+    height: 30px;
+    display: inline-block;
+    margin-right: 5px;
+    background: url(../images/bg_search.png) no-repeat -304px 0;
+    border: 1px solid #cdcdcd;
+    border-color: #9a9a9a #cdcdcd #cdcdcd #9a9a9a;
+    vertical-align: top
+}
+
+.search #search .s_ipt {
+    width: 520px;
+    height: 22px;
+    font: 15px/22px arial;
+    margin: 5px 0 0 7px;
+    outline: 0;
+    background: #fff
+}
+
+.search #search .s_btn {
+    width: 95px;
+    height: 32px;
+    padding-top: 2px\9;
+    font-size: 14px;
+    background: #ddd url(../images/bg_search.png);
+    cursor: pointer
+}
+
+.search #search .s_btn_h {
+    background-position: -100px 0
+}
+
+.search #search .s_btn_wr {
+    width: 97px;
+    height: 34px;
+    display: inline-block;
+    background: url(../images/bg_search.png) no-repeat -202px 0;
+    *position: relative;
+    z-index: 0;
+    vertical-align: top
+}
+
+.search .recommend {
+    height: 32px;
+    line-height: 32px;
+    padding-left: 39px;
+    zoom: 1;
+    position: relative;
+    top: 8px
+}
+
+.search #search form {
+    clear: both;
+    margin: 0;
+    position: relative;
+    z-index: 0
+}
+
+.search #search {
+    min-width: 930px;
+    _width: 930px
+}
+
+.search .supnew {
+    line-height: 32px;
+    height: 32px;
+    padding: 0 22px 0 0;
+    background: url(../images/new.png) no-repeat scroll right 3px transparent;
+    display: inline-block;
+    _zoom: 1
+}
+
+
+/*瀑布流效果样式*/
+
+#container {
+    position: absolute;
+    margin: 0 50px 0 40px;
+}
+
+.box {
+    position: relative;
+    float: left;
+}
+
+.content {
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px #ccc;
+    border-radius: 10px;
+}
+
+.content img {
+    width: 190px;
+    height: auto;
+}

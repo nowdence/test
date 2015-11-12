@@ -1,0 +1,195 @@
+/*公共样式*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-image: url(../images/beijing.gif);
+    color: #000000;
+    font-size: 12px;
+    line-height: 180%;
+    font-family: "微软雅黑"，"宋体"；
+}
+
+
+/*实现圆角样式*/
+
+.all {
+    width: 710px;
+    margin: 0 auto;
+    border: 10px solid #ffffff;
+    border-radius: 10px;
+    box-shadow: 5px 5px rgba(0, 0, 0, .6);
+    background-color: #ffffff;
+    margin-top: 50px;
+}
+
+
+/*头部logo和注册部分摆放*/
+
+.header {
+    height: 82px;
+}
+
+.logo {
+    float: left;
+    margin-left: 20px;
+}
+
+.regist {
+    float: right;
+    margin-top: 50px;
+    margin-right: 20px;
+    color: rgb(255, 0, 153)
+}
+
+.regist a {
+    text-decoration: none;
+}
+
+
+/*要提交的表单数据承载部分*/
+
+.tb_resource,
+.tb_resource td {
+    border: 1px dotted gray;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+.tb_resource td {
+    font-size: 12px;
+    line-height: 180%;
+    color: #333333;
+}
+
+
+/*一些小的样式*/
+
+.tb_resource .zc_sc {
+    text-align: center;
+}
+
+.red_lb {
+    color: #ff0000;
+}
+
+.tit_lb {
+    color: #003399;
+}
+
+.tit {
+    font-size: 12px;
+    line-height: 150%;
+    text-decoration: none;
+    color: #333333;
+    background-color: #EEEEEE;
+}
+
+.p13 {
+    font-size: 13px;
+    line-height: 150%;
+    color: #000000;
+}
+
+.f14 {
+    font-size: 14px;
+    line-height: 170%;
+}
+
+.f16 {
+    font-size: 16px;
+}
+
+.titleinfo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.footer {
+    height: 50px;
+    text-align: center;
+}
+
+.footer .copyrt {
+    color: #666666;
+}
+
+.footer .copyright {
+    line-height: 50px;
+}
+
+.strong {
+    font-weight: bold;
+}
+
+td .td_right {
+    text-align: right;
+}
+
+input[checkbox] {
+    margin: 3px 3px 3px 4px;
+    box-sizing: border-box;
+}
+
+a:link {
+    color: #333333;
+    text-decoration: none
+}
+
+a:visited {
+    color: #333333;
+    text-decoration: none
+}
+
+a:hover {
+    color: #CC0000;
+    text-decoration: none
+}
+
+td .red {
+    color: #ff0000
+}
+
+td .blue {
+    color: #0000ff
+}
+
+td .gray {
+    color: #888888
+}
+
+
+/*一些伪样式*/
+
+td .gray:link {
+    color: #888888;
+    text-decoration: none
+}
+
+td .gray:visited {
+    color: #888888;
+    text-decoration: none
+}
+
+.link:link {
+    color: #0000cc;
+    font-size: 12px;
+    text-decoration: underline
+}
+
+.link:visited {
+    color: #0000cc;
+    font-size: 12px;
+    text-decoration: underline
+}
+
+.link:hover {
+    color: #ff0000;
+    font-size: 12px;
+    text-decoration: underline
+}

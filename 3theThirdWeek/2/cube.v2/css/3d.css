@@ -1,0 +1,143 @@
+@charset "UTF-8";
+
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2015-09-07 08:20:24
+ * @version $Id$
+ */
+
+h1 {
+    text-align: center;
+    color: red;
+}
+
+body {
+    background-color: rgba(0, 252, 223, .6);
+}
+
+.view {
+    width: 180px;
+    height: 180px;
+    margin: 80px auto 0 auto;
+    text-align: center;
+}
+
+@-webkit-keyframes animations {
+    0% {
+        -webkit-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    }
+    10% {
+        -webkit-transform: rotateX(90deg) rotateY(90deg) rotateZ(90deg);
+    }
+    20% {
+        -webkit-transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+    }
+    30% {
+        -webkit-transform: rotateX(270deg) rotateY(270deg) rotateZ(270deg);
+    }
+    40% {
+        -webkit-transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+    }
+    50% {
+        -webkit-transform: rotateX(450deg) rotateY(450deg) rotateZ(450deg);
+    }
+    60% {
+        -webkit-transform: rotateX(540deg) rotateY(540deg) rotateZ(540deg);
+    }
+    80% {
+        -webkit-transform: rotateX(630deg) rotateY(630deg) rotateZ(630deg);
+    }
+    100% {
+        -webkit-transform: rotateX(720deg) rotateY(720deg) rotateZ(720deg);
+    }
+}
+
+.box {
+    -webkit-animation-name: animations;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 6s;
+    /*此行代码用于调试*/
+    /*-webkit-perspective: 180px;*/
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform-origin: 90px 90px 0px;
+}
+
+.box div {
+    position: absolute;
+    height: 180px;
+    width: 180px;
+    border: 3px solid #000;
+    background: rgba(255, 200, 100, .8);
+    text-align: center;
+    font-size: 48px;
+}
+
+.box .one {
+    -webkit-transform: translateZ(90px);
+}
+
+.box .two {
+    -webkit-transform: rotateX(-90deg) translateZ(90px);
+}
+
+.box .three {
+    -webkit-transform: rotateX(90deg) rotateY(-90deg) translateZ(90px) rotateZ(-90deg);
+}
+
+.box .four {
+    -webkit-transform: rotateX(0deg) rotateY(180deg) rotateZ(180deg) translateZ(90px);
+}
+
+.box .five {
+    -webkit-transform: rotateX(90deg) rotateY(360deg) translateZ(90px);
+}
+
+.box .six {
+    -webkit-transform: rotateX(90deg) rotateY(90deg) translateZ(90px) rotateZ(270deg);
+}
+
+.one .oneinner,
+.two .oneinner,
+.three .oneinner,
+.four .oneinner,
+.five .oneinner,
+.six .oneinner {
+    width: 54px;
+    height: 54px;
+    color: #f00;
+    float: left;
+    display: inline-block;
+    position: relative;
+}
+
+.one .oneinner {
+    background-color: rgba(255, 255, 100, 0.8);
+    border: 3px solid #000;
+}
+
+.two .oneinner {
+    background-color: rgba(184, 210, 100, 0.8);
+    border: 3px solid #f00;
+}
+
+.three .oneinner {
+    background-color: rgba(20, 30, 100, 0.8);
+    border: 3px solid #ff0;
+}
+
+.four .oneinner {
+    background-color: rgba(30, 100, 27, 0.8);
+    border: 3px solid #fff;
+}
+
+.five .oneinner {
+    background-color: rgba(100, 210, 100, 0.8);
+    border: 3px solid #00f;
+}
+
+.six .oneinner {
+    background-color: rgba(30, 80, 210, 0.8);
+    border: 3px solid #0F0;
+}

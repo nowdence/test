@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+/**
+ * 
+ * @authors nowdence (nowdence@aliyun.com)
+ * @date    2015-09-04 11:07:14
+ * @version 笨法子实现
+ */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/*盒子公用的阴影*/
+
+div {
+    width: 100px;
+    height: 100px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .6);
+}
+
+
+/*代码重复部分，我自己认为这个代码重复之后把他们合并一下，可以减少代码，不知道这种做法对不对*/
+
+.first,
+.five {
+    clear: both;
+    margin: 0 auto;
+}
+
+.second,
+.third,
+.four {
+    float: left;
+}
+
+
+/*第一个盒子*/
+
+.first {
+    background-color: #f00;
+    margin-top: 50px;
+}
+
+
+/*第二个盒子*/
+
+.second {
+    background-color: #0f0;
+    position: relative;
+    left: 50%;
+    margin-left: -150px;
+}
+
+
+/*第三个盒子*/
+
+.third {
+    background-color: #ddd;
+    position: relative;
+    left: 50%;
+    margin-left: -50px;
+    text-align: center;
+}
+
+.third img {
+    height: 100px;
+    position: relative;
+    top: 50%;
+    margin-top: -50px;
+}
+
+
+/*第四个盒子*/
+
+.four {
+    background-color: #000;
+    position: relative;
+    left: 50%;
+    margin-left: 0x;
+}
+
+
+/*第五个盒子*/
+
+.five {
+    background-color: #00f;
+}

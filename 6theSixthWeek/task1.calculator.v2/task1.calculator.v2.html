@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>简易计算器</title>
+    <link rel="stylesheet" type="text/css" href="css/calculator.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script src="js/script.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header>
+        <h2>简易计算器</h2>
+    </header>
+    <!-- 头部结束 -->
+    <!-- 计算器主体部分 -->
+    <div>
+        <!-- 小提示窗口 -->
+        <p id="note"></p>
+    </div>
+    <div class="container">
+        <!-- 输出界面 -->
+        <div class="row">
+            <input class="btn btn-default" type="text" id="area_show" value="0" onfocus="this.blur();" />
+        </div>
+        <!-- 功能函数按钮 -->
+        <div class="row">
+            <button class="btn btn-warning" onclick="sin()">sin(x)</button>
+            <button class="btn btn-warning" onclick="cos()">cos(x)</button>
+            <button class="btn btn-warning" onclick="tan()">tan(x)</button>
+            <button class="btn btn-danger" onclick="del()">←</button>
+            <button class="btn btn-danger" onclick="clearscreen()">C</button>
+            
+        </div>
+        <!-- 功能函数按钮 -->
+        <div class="row">
+            <button class="btn btn-warning" onclick="arcsin()">arcsin(x)</button>
+            <button class="btn btn-warning" onclick="arccos()">arccos(x)</button>
+            <button class="btn btn-warning" onclick="arctan()">arctan(x)</button>
+            
+            <button class="btn btn-warning" onclick="pow()">x^y</button>
+            <button class="btn btn-warning" onclick="sqrt()">sqrt</button>
+        </div>
+        <!-- 数字按钮 -->
+        <div class="row">
+            <button class="btn btn-success" onclick="command(7)">7</button>
+            <button class="btn btn-success" onclick="command(8)">8</button>
+            <button class="btn btn-success" onclick="command(9)">9</button>
+            <button class="btn btn-warning" onclick="divide()">÷</button>
+            <button class="btn btn-warning" onclick="lg()">lg()</button>
+            
+        </div>
+        <!-- 数字按钮 -->
+        <div class="row">
+            <button class="btn btn-success" onclick="command(4)">4</button>
+            <button class="btn btn-success" onclick="command(5)">5</button>
+            <button class="btn btn-success" onclick="command(6)">6</button>
+            <button class="btn btn-warning" onclick="times()">×</button>
+            <button class="btn btn-warning" onclick="ln()">ln(x)</button>
+        </div>
+        <!-- 数字按钮 -->
+        <div class="row">
+            <button class="btn btn-success" onclick="command(1)">1</button>
+            <button class="btn btn-success" onclick="command(2)">2</button>
+            <button class="btn btn-success" onclick="command(3)">3</button>
+            <button class="btn btn-warning" onclick="minus()">-</button>
+            <button class="btn btn-warning" onclick="persent()">%</button>
+        </div>
+        <!-- 运算符、=号按钮 -->
+        <div class="row">
+            <button class="btn btn-success" onclick="command(0)">0</button>
+            <button class="btn btn-primary" onclick="switch_mp()">+/-</button>
+            <button class="btn btn-success" onclick="dot()">.</button>
+            <button class="btn btn-warning" onclick="plus()">+</button>
+            <button class="btn btn-danger" onclick="equal()">=</button>
+        </div>
+        <!-- 常量按钮 -->
+        <div class="row">
+            <button class="btn btn-primary" onclick="command1('E')">e</button>
+            <button class="btn btn-primary" onclick="command1('PI')">π</button>
+            <button class="btn btn-primary" onclick="command1('LN2')">ln2</button>
+            <button class="btn btn-warning" onclick="factorial()">n!</button>
+            <button class="btn btn-warning" onclick="daoshu()">1/x</button>
+            
+        </div>
+        <!-- 常量按钮 -->
+        <div class="row">
+            <button class="btn btn-primary" onclick="command1('SQRT1_2')">√0.5</button>
+            <button class="btn btn-primary" onclick="command1('SQRT2')">√2</button>
+            <button class="btn btn-primary" onclick="random()">random</button>
+            <button class="btn btn-primary" onclick="command1('LN10')">ln10</button>
+            <button class="btn btn-primary" onclick="command1('LOG2E')">log_2e</button>
+        </div>
+    </div>
+    <!-- 计算器主体部分结束 -->
+    <!-- 尾部 -->
+    <footer>
+        <p>极客学院课堂任务--之简易计算器</p>
+    </footer>
+    <!-- 尾部结束 -->
+</body>
+
+</html>

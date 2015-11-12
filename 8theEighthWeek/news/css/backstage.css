@@ -1,0 +1,22 @@
+.container{
+    width: 900px;
+    padding: 0;
+}
+
+.nav{
+    margin-bottom: 50px;
+}
+
+.tab{
+    width: 900px;
+    margin: 0 auto;
+}
+
+.form{
+    width: 500px;
+    margin: 0 auto;
+}
+
+.con_out{
+    display: none;
+}

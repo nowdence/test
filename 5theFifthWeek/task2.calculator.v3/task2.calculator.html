@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>task2.calculator</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/calculator.css" rel="stylesheet">
+    <script src="js/script.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="table-responsive">
+            <table class="table table-condensed">
+                <!--显示结果行-->
+                <tr class="active">
+                    <td colspan="4">
+                        <input class="btn btn-default" id="inp1" type="text" value="" name="xianshi" />
+                    </td>
+                </tr>
+                <!--第一行-->
+                <tr class="active">
+                    <td class="success" colspan="2">
+                        <input class="btn btn-warning" type="button" value="Square" onclick="inputPCB(this)" />
+                    </td>
+                    <td class="success" colspan="2">
+                        <input class="btn btn-warning" type="button" value="Clear" onclick="inputPCB(this)" />
+                    </td>
+                </tr>
+                <!--第二行-->
+                <tr class="active">
+                    <td class="success">
+                        <input class="btn btn-success" type="button" value="+" onclick="inputOper(this)" />
+                    </td>
+                    <td class="success">
+                        <input class="btn btn-success" type="button" value="-" onclick="inputOper(this)" />
+                    </td>
+                    <td class="success">
+                        <input class="btn btn-success" type="button" value="*" onclick="inputOper(this)" />
+                    </td>
+                    <td class="success">
+                        <input class="btn btn-success" type="button" value="/" onclick="inputOper(this)" />
+                    </td>
+                </tr>
+                <!--第三行-->
+                <tr class="active">
+                    <td class="success">
+                        <input class="btn btn-primary" type="button" value="1" onclick="inputEvent(this)" />
+                    </td>
+                    <td class="success">
+                        <input class="btn btn-primary" type="button" value="2" onclick="inputEvent(this)" />
+                    </td>
+                    <td class="success">
+                        <input class="btn btn-primary" type="button" value="3" onclick="inputEvent(this)" />
+                    </td>
+                    <td class="success">
+                        <input class="btn btn-primary" type="button" value="4" onclick="inputEvent(this)" />
+                    </td>
+                </tr>
+                <!--第四行-->
+                <tr class="active">
+                    <td class="success">
+                        <input class="btn btn-primary" type="button" value="5" onclick="inputEvent(this)" />
+                    </td>
+                    <td class="success">
+                        <input class="btn btn-primary" type="button" value="6" onclick="inputEvent(this)" />
+                    </td>
+                    <td class="success">
+                        <input class="btn btn-primary" type="button" value="7" onclick="inputEvent(this)" />
+                    </td>
+                    <td class="success">
+                        <input class="btn btn-primary" type="button" value="8" onclick="inputEvent(this)" />
+                    </td>
+                </tr>
+                <!--第五行-->
+                <tr class="active">
+                    <td class="success">
+                        <input class="btn btn-primary" type="button" value="9" onclick="inputEvent(this)" />
+                    </td>
+                    <td class="success">
+                        <input class="btn btn-primary" type="button" value="0" onclick="inputEvent(this)" />
+                    </td>
+                    <td class="success">
+                        <input class="btn btn-primary" type="button" value="." onclick="inputEvent(this)" />
+                    </td>
+                    <td class="success">
+                        <input class="btn btn-default" type="button" value="-" onclick="inputEvent(this)" />
+                    </td>
+                </tr>
+                <tr class="active">
+                    <td class="success" colspan="4">
+                        <input class="btn btn-danger" type="button" value="=" onclick="inputEquel(this)" />
+                    </td>
+                    
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+</body>
+
+</html>
